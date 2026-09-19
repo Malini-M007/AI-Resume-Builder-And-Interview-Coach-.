@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northstar AI resume builder and internship coach dashboard.">
+  <title>Northstar | Career workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="brand"><span class="brand-mark">✦</span><span>northstar</span></div>
+      <div class="workspace-switcher"><div class="workspace-dot">AM</div><div><strong>Alex Morgan</strong><span>Personal workspace</span></div><span class="chevron">⌄</span></div>
+      <nav class="nav-list">
+        <p class="nav-label">Workspace</p>
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◈</span>Overview</button>
+        <button class="nav-item" data-view="resume"><span class="nav-icon">▤</span>Resume builder <span class="nav-count">2</span></button>
+        <button class="nav-item" data-view="coach"><span class="nav-icon">◌</span>Internship coach</button>
+        <button class="nav-item" data-view="applications"><span class="nav-icon">□</span>Applications</button>
+        <p class="nav-label second">Resources</p>
+        <button class="nav-item"><span class="nav-icon">⌁</span>Career toolkit</button>
+        <button class="nav-item"><span class="nav-icon">?</span>Help center</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="upgrade-card"><span class="spark">✦</span><strong>Unlock your edge</strong><p>Get tailored feedback and unlimited resume versions.</p><button class="upgrade-btn">View Pro plan <span>→</span></button></div>
+        <button class="user-row"><div class="avatar">AM</div><span>Alex Morgan</span><span class="more">•••</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar"><div class="breadcrumbs"><span>Workspace</span><b>/</b><strong id="breadcrumbCurrent">Overview</strong></div><div class="top-actions"><button class="icon-btn" aria-label="Notifications" title="Notifications">♧<i></i></button><button class="help-btn">Need a hand? <span>↗</span></button></div></header>
+
+      <section class="page-view active-view" id="overviewView">
+        <div class="welcome-row"><div><p class="eyebrow">MONDAY, SEPTEMBER 19, 2026</p><h1>Good morning, Alex<span class="coral">.</span></h1><p class="subhead">Your next opportunity is closer than you think.</p></div><button class="primary-btn" id="newResumeBtn"><span>＋</span> New resume</button></div>
+        <div class="metrics-grid"><div class="metric-card accent"><div class="metric-top"><span>Profile strength</span><span class="metric-icon">↗</span></div><strong>78<span>%</span></strong><div class="progress"><span style="width:78%"></span></div><small><b>+12%</b> since last week</small></div><div class="metric-card"><div class="metric-top"><span>Applications</span><span class="metric-icon blue">↗</span></div><strong>14</strong><small><b class="neutral">3 active</b> · 4 interviews</small><div class="mini-bars"><i style="height:25%"></i><i style="height:45%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:52%"></i><i style="height:90%"></i><i style="height:78%"></i></div></div><div class="metric-card"><div class="metric-top"><span>Coach sessions</span><span class="metric-icon green">◌</span></div><strong>06</strong><small><b class="neutral">2 this week</b> · 1 upcoming</small><div class="session-line"><span>Next session</span><b>Tomorrow, 4:30 PM</b></div></div></div>
+        <div class="content-grid"><section class="panel resume-panel"><div class="panel-heading"><div><p class="eyebrow">YOUR RESUMES</p><h2>Make your experience memorable.</h2></div><button class="text-btn" data-view="resume">View all <span>→</span></button></div><div class="resume-list"><article class="resume-item featured"><div class="doc-preview"><div class="doc-line wide"></div><div class="doc-line"></div><div class="doc-line short"></div><div class="doc-rule"></div><div class="doc-line wide"></div><div class="doc-line tiny"></div></div><div class="resume-info"><div class="item-tag">RECOMMENDED</div><h3>Product Designer · 2026</h3><p>Updated 2 hours ago <span>·</span> ATS score <b>92</b></p><div class="item-actions"><button class="outline-btn edit-btn">Edit resume</button><button class="round-arrow" aria-label="Open resume">→</button></div></div></article><article class="resume-item"><div class="doc-preview cream"><div class="doc-line wide"></div><div class="doc-line"></div><div class="doc-rule"></div><div class="doc-line short"></div><div class="doc-line wide"></div></div><div class="resume-info"><h3>General application · 2026</h3><p>Updated Sep 12, 2026 <span>·</span> ATS score <b>84</b></p><div class="item-actions"><button class="outline-btn edit-btn">Edit resume</button><button class="round-arrow" aria-label="Open resume">→</button></div></div></article></div></section><aside class="panel coach-panel"><div class="coach-head"><div class="coach-orb">✦</div><div><p class="eyebrow">AI CAREER COACH</p><h2>One smart step at a time.</h2></div></div><p class="coach-copy">Based on your goals, here’s what will move your search forward today.</p><div class="coach-task"><span class="task-number">01</span><div><strong>Add outcomes to your last project</strong><p>Make your impact impossible to miss.</p></div><button class="task-arrow">→</button></div><button class="coach-btn" id="coachBtn">Open coaching plan <span>↗</span></button></aside></div>
+        <section class="activity-section"><div class="section-heading"><div><p class="eyebrow">KEEP GOING</p><h2>Recent activity</h2></div><button class="text-btn">See activity <span>→</span></button></div><div class="activity-list"><div class="activity-row"><div class="activity-icon coral-bg">✦</div><div><strong>Resume feedback is ready</strong><p>Product Designer · 3 suggestions to review</p></div><time>2h ago</time><button class="row-arrow">→</button></div><div class="activity-row"><div class="activity-icon blue-bg">↗</div><div><strong>You saved a new opportunity</strong><p>Junior Product Designer · Lumen Labs</p></div><time>Yesterday</time><button class="row-arrow">→</button></div></div></section>
+      </section>
+
+      <section class="page-view" id="resumeView"><div class="view-header"><div><p class="eyebrow">RESUME BUILDER</p><h1>Build a resume that gets read<span class="coral">.</span></h1><p class="subhead">Choose a version to refine or start with a role-specific template.</p></div><button class="primary-btn"><span>＋</span> Start from scratch</button></div><div class="builder-grid"><div class="builder-card"><div class="template-preview"><div class="preview-heading"></div><div class="preview-columns"><div><i></i><i></i><i class="long"></i><i></i></div><div><i></i><i></i><i></i><i class="long"></i></div></div></div><div><p class="item-tag">CURRENT</p><h3>Product Designer · 2026</h3><p class="muted">92 ATS score · Updated 2 hours ago</p><button class="outline-btn full edit-btn">Continue editing <span>→</span></button></div></div><div class="template-card"><div class="plus-large">＋</div><h3>Create a tailored version</h3><p>Match your story to the role you want next.</p><button class="text-btn">Browse templates <span>→</span></button></div></div></section>
+
+      <section class="page-view" id="coachView"><div class="view-header"><div><p class="eyebrow">INTERNSHIP COACH</p><h1>Your career, with a clearer next step<span class="coral">.</span></h1><p class="subhead">A practical plan built around your target roles and current momentum.</p></div><button class="primary-btn" id="startSessionBtn">Start a session <span>↗</span></button></div><div class="coach-dashboard"><div class="plan-panel"><div class="panel-heading"><div><p class="eyebrow">THIS WEEK</p><h2>Your action plan</h2></div><span class="plan-progress">2 / 4 complete</span></div><div class="plan-item done"><span>✓</span><div><strong>Define your target roles</strong><p>Product design · UX research</p></div><b>Done</b></div><div class="plan-item done"><span>✓</span><div><strong>Refresh your headline</strong><p>Clear, specific, and searchable</p></div><b>Done</b></div><div class="plan-item"><span>3</span><div><strong>Practice your portfolio story</strong><p>Build a 90-second project walkthrough</p></div><button>Start →</button></div><div class="plan-item"><span>4</span><div><strong>Apply to three aligned roles</strong><p>We found 12 opportunities to review</p></div><button>View roles →</button></div></div><div class="session-panel"><div class="session-art">✦</div><p class="eyebrow">NEXT SESSION</p><h2>Portfolio storytelling</h2><p>Tomorrow · 4:30 PM<br>15 minutes with Northstar AI</p><button class="outline-btn full" id="sessionAction">Prepare now <span>→</span></button></div></div></section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status">Your new resume workspace is ready.</div>
+  <script src="app.js"></script>
+</body>
+</html>

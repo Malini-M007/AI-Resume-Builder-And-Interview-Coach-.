@@ -1,0 +1,9 @@
+{
+  "name": "northstar-career-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Northstar AI resume builder and internship coach",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
